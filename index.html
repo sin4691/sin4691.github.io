@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<script>document.documentElement.classList.add('js');</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>신재윤 | Game Client Developer Portfolio</title>
+<meta name="description" content="신재윤 — Unity/C# 기반 게임 클라이언트 개발자 포트폴리오">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-glow bg-glow--one"></div>
+<div class="bg-glow bg-glow--two"></div>
+
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="#top" class="logo">SIN<span>JAEYUN</span></a>
+    <nav class="nav" id="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn--ghost header-cta" href="https://github.com/sin4691" target="_blank" rel="noopener">GitHub</a>
+    <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero container">
+    <p class="eyebrow reveal">GAME CLIENT DEVELOPER · JUNIOR</p>
+    <h1 class="hero-title reveal">
+      신재윤<span class="dot">.</span>
+      <span class="hero-title-sub">Unity로 게임을 만듭니다.</span>
+    </h1>
+    <p class="hero-desc reveal">
+      C#과 Unity를 기반으로 팀 프로젝트와 개인 프로젝트를 통해 게임 클라이언트를 개발해온 신입 개발자입니다.
+    </p>
+    <div class="hero-actions reveal">
+      <a href="#projects" class="btn btn--primary">프로젝트 보기</a>
+      <a href="#contact" class="btn btn--ghost">연락하기</a>
+    </div>
+
+    <div class="stack-row reveal" aria-label="기술 스택">
+      <span class="stack-pill">C#</span>
+      <span class="stack-pill">Unity</span>
+      <span class="stack-pill">Git / GitHub</span>
+    </div>
+  </section>
+
+  <section id="about" class="about container">
+    <div class="section-head">
+      <p class="eyebrow">ABOUT</p>
+      <h2>소개</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-card reveal">
+        <h3>Profile</h3>
+        <ul class="about-list">
+          <li><span>이름</span><strong>신재윤</strong></li>
+          <li><span>포지션</span><strong>Game Client Developer (신입)</strong></li>
+          <li><span>학력</span><strong>대학교 졸업</strong></li>
+          <li><span>GitHub</span><strong><a href="https://github.com/sin4691" target="_blank" rel="noopener">github.com/sin4691</a></strong></li>
+        </ul>
+      </div>
+      <div class="about-card reveal">
+        <h3>Skills</h3>
+        <div class="skill-block">
+          <p class="skill-label">Language</p>
+          <div class="skill-tags"><span>C#</span></div>
+        </div>
+        <div class="skill-block">
+          <p class="skill-label">Engine</p>
+          <div class="skill-tags"><span>Unity</span></div>
+        </div>
+        <div class="skill-block">
+          <p class="skill-label">Tools</p>
+          <div class="skill-tags"><span>Git</span><span>GitHub</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects container">
+    <div class="section-head">
+      <p class="eyebrow">PROJECTS</p>
+      <h2>대표 프로젝트</h2>
+      <p class="section-desc">팀 프로젝트와 개인 프로젝트로 진행한 Unity 게임들입니다.</p>
+    </div>
+
+    <div class="project-grid">
+
+      <!-- Project 1 -->
+      <article class="project-card reveal">
+        <div class="project-thumb project-thumb--1">
+          <!-- TODO: 스크린샷 준비되면 아래 div를 <img src="assets/back-together.jpg" alt="Back Together 스크린샷"> 로 교체하세요 -->
+          <span class="thumb-placeholder">BACK<br>TOGETHER</span>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>Back Together</h3>
+            <span class="badge badge--team">팀 프로젝트 · 4인</span>
+          </div>
+          <p class="project-desc">4인이 협업한 온라인 협동 게임. Epic Online Services(EOS)를 활용해 네트워크 매칭 및 멀티플레이 기능을 구현했습니다.</p>
+          <div class="tag-row">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">EOS (Epic Online Services)</span>
+            <span class="tag">Multiplayer</span>
+          </div>
+          <a class="project-link" href="https://github.com/Devel-Rocket-ClassRoom/network-team-project-july-dororong" target="_blank" rel="noopener">
+            GitHub 저장소 보기 <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card reveal">
+        <div class="project-thumb project-thumb--2">
+          <!-- TODO: 스크린샷 준비되면 아래 div를 <img src="assets/under-hall.jpg" alt="Under Hall 스크린샷"> 로 교체하세요 -->
+          <span class="thumb-placeholder">UNDER<br>HALL</span>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>Under Hall</h3>
+            <span class="badge badge--solo">개인 프로젝트</span>
+          </div>
+          <p class="project-desc">혼자서 기획부터 구현까지 진행한 로그라이트(Roguelite) 장르 게임입니다.</p>
+          <div class="tag-row">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Roguelite</span>
+          </div>
+          <a class="project-link" href="https://github.com/Devel-Rocket-ClassRoom/team-project-may-5-3" target="_blank" rel="noopener">
+            GitHub 저장소 보기 <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card reveal">
+        <div class="project-thumb project-thumb--3">
+          <!-- TODO: 스크린샷 준비되면 아래 div를 <img src="assets/deadline.jpg" alt="DeadLine 스크린샷"> 로 교체하세요 -->
+          <span class="thumb-placeholder">DEAD<br>LINE</span>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3>DeadLine</h3>
+            <span class="badge badge--solo">개인 프로젝트</span>
+          </div>
+          <p class="project-desc">혼자서 기획부터 구현까지 진행한 공포(Horror) 장르 게임입니다.</p>
+          <div class="tag-row">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">Horror</span>
+          </div>
+          <a class="project-link" href="https://github.com/Devel-Rocket-ClassRoom/personal-project-april-sin4691" target="_blank" rel="noopener">
+            GitHub 저장소 보기 <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact container">
+    <div class="contact-card reveal">
+      <p class="eyebrow">CONTACT</p>
+      <h2>함께 일하고 싶다면</h2>
+      <p class="section-desc">채용/협업 제안은 언제든 환영합니다.</p>
+      <div class="contact-actions">
+        <a class="btn btn--primary" href="mailto:as4250as@gmail.com">as4250as@gmail.com</a>
+        <a class="btn btn--ghost" href="https://github.com/sin4691" target="_blank" rel="noopener">GitHub 프로필</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> Sin Jaeyun. All rights reserved.</span>
+    <a href="#top">맨 위로 ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
