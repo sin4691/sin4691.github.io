@@ -40,7 +40,7 @@
       <span class="hero-title-sub">Unity로 게임을 만듭니다.</span>
     </h1>
     <p class="hero-desc reveal">
-      C#과 Unity를 기반으로 팀 프로젝트와 개인 프로젝트를 통해 게임 클라이언트를 개발해온 신입 개발자입니다.
+      플레이어가 손끝으로 느끼는 손맛과 조작감을 중요하게 생각하는 게임 클라이언트 개발자입니다.
     </p>
     <div class="hero-actions reveal">
       <a href="#projects" class="btn btn--primary">프로젝트 보기</a>
@@ -65,7 +65,7 @@
         <ul class="about-list">
           <li><span>이름</span><strong>신재윤</strong></li>
           <li><span>포지션</span><strong>Game Client Developer (신입)</strong></li>
-          <li><span>학력</span><strong>대학교 졸업</strong></li>
+          <li><span>학력</span><strong>한세대학교 ICT융합학과 (2026.02 졸업)</strong></li>
           <li><span>GitHub</span><strong><a href="https://github.com/sin4691" target="_blank" rel="noopener">github.com/sin4691</a></strong></li>
         </ul>
       </div>
@@ -107,13 +107,14 @@
             <h3>Back Together</h3>
             <span class="badge badge--team">팀 프로젝트 · 4인</span>
           </div>
-          <p class="project-desc">4인이 협업한 온라인 협동 게임. Epic Online Services(EOS)를 활용해 네트워크 매칭 및 멀티플레이 기능을 구현했습니다.</p>
+          <p class="project-desc">4인이 협업한 온라인 협동 게임(Epic Online Services 기반 멀티플레이). 코드 로직을 이해하고 기믹(게임 메커니즘)을 설계해 레벨에 배치하는 기획·레벨 디자인을 담당했고, 직접 제작한 홍보 릴스로 실제 마케팅 성과를 만들어냈습니다.</p>
+          <div class="stat-chip">🎬 홍보 릴스 조회수 170K · 공유 5.4K</div>
           <div class="tag-row">
-            <span class="tag">Unity</span>
-            <span class="tag">C#</span>
-            <span class="tag">EOS (Epic Online Services)</span>
-            <span class="tag">Multiplayer</span>
+            <span class="tag">기획</span>
+            <span class="tag">레벨 디자인</span>
+            <span class="tag">마케팅</span>
           </div>
+          <p class="tech-note">사용 기술: Unity · C# · EOS (Epic Online Services) · Multiplayer</p>
           <a class="project-link" href="https://github.com/Devel-Rocket-ClassRoom/network-team-project-july-dororong" target="_blank" rel="noopener">
             GitHub 저장소 보기 <span aria-hidden="true">→</span>
           </a>
@@ -129,14 +130,19 @@
         <div class="project-body">
           <div class="project-top">
             <h3>Under Hall</h3>
-            <span class="badge badge--solo">개인 프로젝트</span>
+            <span class="badge badge--team">팀 프로젝트 · 4인 (팀장)</span>
           </div>
-          <p class="project-desc">혼자서 기획부터 구현까지 진행한 로그라이트(Roguelite) 장르 게임입니다.</p>
+          <p class="project-desc">1인 플레이 로그라이트(Roguelite) 장르 게임을 만든 4인 팀 프로젝트에서 팀장을 맡아 UI 프로그래밍, 맵 배치, 게임 데이터 값 총괄을 담당했습니다. 팀원 전원이 Git과 협업 프로젝트가 처음이라 협업 프로세스 정립, 일정 관리, 발표까지 도맡았습니다.</p>
+          <ul class="detail-list">
+            <li><strong>Git 인코딩 이슈</strong> — 팀원 코드가 계속 변경 감지되던 문제를 VS 인코딩 UTF-8 통일 + .editorconfig / .gitattributes로 강제 통일해 해결</li>
+            <li><strong>빌드 크래시</strong> — 한글 UI에 TMP Dynamic 폰트 사용 시 빌드 버전에서 크래시 발생 → 한글 2,350자를 미리 구운 Static 폰트로 교체해 제거</li>
+          </ul>
           <div class="tag-row">
-            <span class="tag">Unity</span>
-            <span class="tag">C#</span>
-            <span class="tag">Roguelite</span>
+            <span class="tag">팀장</span>
+            <span class="tag">UI 프로그래밍</span>
+            <span class="tag">Git 관리</span>
           </div>
+          <p class="tech-note">사용 기술: Unity · C# · TextMeshPro · Roguelite</p>
           <a class="project-link" href="https://github.com/Devel-Rocket-ClassRoom/team-project-may-5-3" target="_blank" rel="noopener">
             GitHub 저장소 보기 <span aria-hidden="true">→</span>
           </a>
@@ -154,12 +160,17 @@
             <h3>DeadLine</h3>
             <span class="badge badge--solo">개인 프로젝트</span>
           </div>
-          <p class="project-desc">혼자서 기획부터 구현까지 진행한 공포(Horror) 장르 게임입니다.</p>
+          <p class="project-desc">게임 개발을 처음 배우기 시작했을 때 기획부터 구현까지 혼자 진행한 공포(Horror) 장르 게임입니다. 사운드 기반 발각 시스템과 AI 추격 시스템을 직접 구현했습니다.</p>
+          <ul class="detail-list">
+            <li><strong>은신(발각) 시스템</strong> — 몬스터에 콜라이더 기반 3단계 감지 범위(큰 소리·중간 소리·작은 소리)를 두고, 플레이어의 이동 상태(달리기·걷기·앉아 걷기)별 소음 값이 범위 허용치를 넘으면 발각되도록 구현. 상시 레이캐스트 대신 콜라이더 판정으로 연산 부담을 줄임</li>
+            <li><strong>AI 추격 시스템</strong> — 소리로 발각된 위치를 실시간으로 갱신해 몬스터가 최신 발각 위치까지 이동하고, 도착 후 주변을 둘러보는 Idle 상태로 전환해 재탐색하도록 구현</li>
+          </ul>
           <div class="tag-row">
-            <span class="tag">Unity</span>
-            <span class="tag">C#</span>
-            <span class="tag">Horror</span>
+            <span class="tag">사운드 연출</span>
+            <span class="tag">AI 추격 시스템</span>
+            <span class="tag">은신 메커닉</span>
           </div>
+          <p class="tech-note">사용 기술: Unity · C#</p>
           <a class="project-link" href="https://github.com/Devel-Rocket-ClassRoom/personal-project-april-sin4691" target="_blank" rel="noopener">
             GitHub 저장소 보기 <span aria-hidden="true">→</span>
           </a>
