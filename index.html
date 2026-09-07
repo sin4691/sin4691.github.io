@@ -21,7 +21,7 @@
     <a href="#top" class="logo">SIN<span>JAEYUN</span></a>
     <nav class="nav" id="nav">
       <a href="#about">About</a>
-      <a href="#projects">Projects</a>
+      <a href="#projects-heading">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
     <a class="btn btn--ghost header-cta" href="https://github.com/sin4691" target="_blank" rel="noopener">GitHub</a>
@@ -43,7 +43,7 @@
       플레이어가 손끝으로 느끼는 손맛과 조작감을 중요하게 생각하는 게임 클라이언트 개발자입니다.
     </p>
     <div class="hero-actions reveal">
-      <a href="#projects" class="btn btn--primary">프로젝트 보기</a>
+      <a href="#projects-heading" class="btn btn--primary">프로젝트 보기</a>
       <a href="#contact" class="btn btn--ghost">연락하기</a>
     </div>
 
@@ -54,23 +54,48 @@
     </div>
   </section>
 
-  <section id="about" class="about container">
-    <div class="section-head">
-      <p class="eyebrow">ABOUT</p>
-      <h2>소개</h2>
-    </div>
-    <div class="about-grid">
-      <div class="about-card reveal">
-        <h3>Profile</h3>
+  <div class="shell container">
+
+    <!-- Left sticky sidebar -->
+    <aside class="side-nav" id="sideNav">
+      <p class="side-nav-label">PROFILE</p>
+      <a href="#about" class="side-link">프로필</a>
+      <a href="#skills" class="side-link">스킬</a>
+
+      <p class="side-nav-label side-nav-label--gap">PROJECTS</p>
+      <a href="#p-back-together" class="side-link">
+        <span class="side-link-dot side-link-dot--1"></span>Back Together
+      </a>
+      <a href="#p-under-hall" class="side-link">
+        <span class="side-link-dot side-link-dot--2"></span>Under Hall
+      </a>
+      <a href="#p-deadline" class="side-link">
+        <span class="side-link-dot side-link-dot--3"></span>DeadLine
+      </a>
+
+      <p class="side-nav-label side-nav-label--gap">MORE</p>
+      <a href="#contact" class="side-link">Contact</a>
+      <a href="https://github.com/sin4691" target="_blank" rel="noopener" class="side-link">GitHub 프로필 ↗</a>
+    </aside>
+
+    <!-- Right content column -->
+    <div class="content-main">
+
+      <section id="about" class="content-section reveal">
+        <p class="eyebrow">ABOUT</p>
+        <h2>프로필</h2>
         <ul class="about-list">
           <li><span>이름</span><strong>신재윤</strong></li>
           <li><span>포지션</span><strong>Game Client Developer (신입)</strong></li>
           <li><span>학력</span><strong>한세대학교 ICT융합학과 (2026.02 졸업)</strong></li>
           <li><span>GitHub</span><strong><a href="https://github.com/sin4691" target="_blank" rel="noopener">github.com/sin4691</a></strong></li>
+          <li><span>Email</span><strong><a href="mailto:as4250as@gmail.com">as4250as@gmail.com</a></strong></li>
         </ul>
-      </div>
-      <div class="about-card reveal">
-        <h3>Skills</h3>
+      </section>
+
+      <section id="skills" class="content-section reveal">
+        <p class="eyebrow">SKILLS</p>
+        <h2>스킬</h2>
         <div class="skill-block">
           <p class="skill-label">Language</p>
           <div class="skill-tags"><span>C#</span></div>
@@ -80,117 +105,160 @@
           <div class="skill-tags"><span>Unity</span></div>
         </div>
         <div class="skill-block">
-          <p class="skill-label">Tools</p>
-          <div class="skill-tags"><span>Git</span><span>GitHub</span></div>
+          <p class="skill-label">Tools / Collaboration</p>
+          <div class="skill-tags"><span>Git</span><span>GitHub</span><span>.editorconfig / .gitattributes</span></div>
         </div>
-      </div>
+      </section>
+
+      <h2 id="projects-heading" class="projects-heading">대표 프로젝트</h2>
+      <p class="projects-sub">팀 프로젝트와 개인 프로젝트로 진행한 Unity 게임 3개를 정리했습니다. 각 프로젝트에서 실제로 담당한 역할과 부딪힌 문제, 해결 방법 위주로 적었습니다.</p>
+
+      <!-- Project 1: Back Together -->
+      <section id="p-back-together" class="content-section project-section reveal">
+        <div class="project-banner project-banner--1">
+          <!-- TODO: 스크린샷 준비되면 이 div를 <img src="assets/back-together.jpg" alt="Back Together 스크린샷" class="project-banner-img"> 로 교체하세요 -->
+          <span class="banner-placeholder">BACK TOGETHER</span>
+        </div>
+
+        <div class="project-head">
+          <p class="eyebrow">PROJECT 01 · 팀 프로젝트</p>
+          <h2>Back Together</h2>
+          <div class="badge-row">
+            <span class="badge badge--team">4인 협동 게임 · 팀 프로젝트</span>
+          </div>
+        </div>
+
+        <h4>개요</h4>
+        <p>Epic Online Services(EOS)를 활용한 네트워크 매칭 기반의 4인 협동 온라인 게임입니다. 4명이 함께 개발했습니다.</p>
+
+        <h4>담당 역할</h4>
+        <p>기획 · 레벨 디자인 · 마케팅을 담당했습니다. 코드를 직접 작성하는 비중은 크지 않았지만, 코딩적으로 생각하며 게임 기믹(메커니즘)을 기획하고, 기믹 담당 프로그래머가 구현한 코드를 이해한 뒤 이를 활용해 레벨에 배치하는 역할을 맡았습니다.</p>
+
+        <h4>성과</h4>
+        <p>직접 기획하고 제작한 홍보 릴스가 유의미한 확산 성과를 냈습니다.</p>
+        <div class="stat-row">
+          <div class="stat-box">
+            <span class="stat-num">170K</span>
+            <span class="stat-label">릴스 조회수</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num">5.4K</span>
+            <span class="stat-label">공유 수</span>
+          </div>
+        </div>
+
+        <h4>기술 스택</h4>
+        <div class="tag-row">
+          <span class="tag">Unity</span>
+          <span class="tag">C#</span>
+          <span class="tag">EOS (Epic Online Services)</span>
+          <span class="tag">Multiplayer</span>
+        </div>
+
+        <a class="project-link" href="https://github.com/Devel-Rocket-ClassRoom/network-team-project-july-dororong" target="_blank" rel="noopener">
+          GitHub 저장소 보기 <span aria-hidden="true">→</span>
+        </a>
+      </section>
+
+      <!-- Project 2: Under Hall -->
+      <section id="p-under-hall" class="content-section project-section reveal">
+        <div class="project-banner project-banner--2">
+          <!-- TODO: 스크린샷 준비되면 이 div를 <img src="assets/under-hall.jpg" alt="Under Hall 스크린샷" class="project-banner-img"> 로 교체하세요 -->
+          <span class="banner-placeholder">UNDER HALL</span>
+        </div>
+
+        <div class="project-head">
+          <p class="eyebrow">PROJECT 02 · 팀 프로젝트 · 팀장</p>
+          <h2>Under Hall</h2>
+          <div class="badge-row">
+            <span class="badge badge--team">4인 팀 프로젝트</span>
+            <span class="badge badge--lead">팀장</span>
+          </div>
+        </div>
+
+        <h4>개요</h4>
+        <p>1인 플레이 로그라이트(Roguelite) 장르 게임을 만든 4인 팀 프로젝트입니다. 팀원 전원이 Git과 협업 프로젝트 경험이 처음이었습니다.</p>
+
+        <h4>담당 역할</h4>
+        <p>팀장으로서 기획 방향 확립과 최종 의사결정, 일정 관리, 발표를 총괄했습니다. 개발 측면에서는 UI 시스템 프로그래밍, 맵(레벨) 배치, 게임 데이터 값 총괄을 직접 담당했고, 팀원 전원이 Git이 처음이었던 만큼 Git 협업 프로세스를 정립하고 관리하는 역할도 맡았습니다.</p>
+
+        <h4>트러블슈팅</h4>
+        <div class="case-block">
+          <p class="case-label">CASE 1 — Git 인코딩 문제</p>
+          <p><strong>문제</strong> · 팀원들의 코드가 실제로는 바뀐 내용이 없는데도 Git에서 계속 변경(diff)으로 감지되는 문제가 반복됐습니다.</p>
+          <p><strong>원인</strong> · 팀원마다 에디터의 파일 인코딩 설정이 달라 저장할 때마다 인코딩이 미묘하게 달라졌습니다.</p>
+          <p><strong>해결</strong> · Visual Studio 인코딩을 UTF-8로 통일하고, <code>.editorconfig</code>와 <code>.gitattributes</code>로 인코딩/줄바꿈 규칙을 강제해 문제를 해결했습니다.</p>
+        </div>
+        <div class="case-block">
+          <p class="case-label">CASE 2 — 빌드 버전 크래시</p>
+          <p><strong>문제</strong> · 에디터에서는 정상이었지만, 실제 빌드 버전에서 한글 UI를 출력할 때 앱이 강제 종료(크래시)됐습니다.</p>
+          <p><strong>원인</strong> · 한글 UI에 TextMeshPro(TMP) 폰트를 Dynamic 모드로 사용하고 있었고, 빌드 환경에서 필요한 글리프를 런타임에 생성하는 과정에서 크래시가 발생했습니다.</p>
+          <p><strong>해결</strong> · 한글 완성형 2,350자를 미리 구운 Static 폰트로 교체해 런타임 글리프 생성을 없애 크래시를 제거했습니다.</p>
+        </div>
+
+        <h4>기술 스택</h4>
+        <div class="tag-row">
+          <span class="tag">Unity</span>
+          <span class="tag">C#</span>
+          <span class="tag">TextMeshPro</span>
+          <span class="tag">Git</span>
+          <span class="tag">Roguelite</span>
+        </div>
+
+        <a class="project-link" href="https://github.com/Devel-Rocket-ClassRoom/team-project-may-5-3" target="_blank" rel="noopener">
+          GitHub 저장소 보기 <span aria-hidden="true">→</span>
+        </a>
+      </section>
+
+      <!-- Project 3: DeadLine -->
+      <section id="p-deadline" class="content-section project-section reveal">
+        <div class="project-banner project-banner--3">
+          <!-- TODO: 스크린샷 준비되면 이 div를 <img src="assets/deadline.jpg" alt="DeadLine 스크린샷" class="project-banner-img"> 로 교체하세요 -->
+          <span class="banner-placeholder">DEADLINE</span>
+        </div>
+
+        <div class="project-head">
+          <p class="eyebrow">PROJECT 03 · 개인 프로젝트</p>
+          <h2>DeadLine</h2>
+          <div class="badge-row">
+            <span class="badge badge--solo">1인 개발</span>
+          </div>
+        </div>
+
+        <h4>개요</h4>
+        <p>게임 개발을 처음 배우기 시작했을 때 기획부터 구현까지 혼자 진행한 공포(Horror) 장르 게임입니다.</p>
+
+        <h4>핵심 구현 — 은신(발각) 시스템</h4>
+        <p>몬스터에 콜라이더 기반으로 3단계 감지 범위(큰 소리 · 중간 소리 · 작은 소리)를 설정했습니다. 플레이어의 이동 상태(달리기 · 걷기 · 앉아서 걷기)마다 서로 다른 소음 값을 부여하고, 값이 변할 때마다 이를 읽어 현재 위치한 감지 범위의 허용 수치를 넘으면 발각되도록 구현했습니다. 상시 레이캐스트 대신 콜라이더 기반 판정을 사용해 연산 부담을 줄였습니다.</p>
+
+        <h4>핵심 구현 — AI 추격 시스템</h4>
+        <p>소리로 발각되면 그 위치를 실시간으로 계속 갱신하고, 몬스터가 최신 발각 위치까지 이동하도록 구현했습니다. 도착 후에는 주변을 둘러보는 Idle 상태로 전환해 재탐색하도록 만들어, 플레이어를 놓쳤을 때도 자연스럽게 순찰로 이어지게 했습니다.</p>
+
+        <h4>기술 스택</h4>
+        <div class="tag-row">
+          <span class="tag">Unity</span>
+          <span class="tag">C#</span>
+          <span class="tag">사운드 기반 감지</span>
+          <span class="tag">AI 추격</span>
+        </div>
+
+        <a class="project-link" href="https://github.com/Devel-Rocket-ClassRoom/personal-project-april-sin4691" target="_blank" rel="noopener">
+          GitHub 저장소 보기 <span aria-hidden="true">→</span>
+        </a>
+      </section>
+
+      <section id="contact" class="content-section contact-section reveal">
+        <p class="eyebrow">CONTACT</p>
+        <h2>함께 일하고 싶다면</h2>
+        <p>채용/협업 제안은 언제든 환영합니다.</p>
+        <div class="contact-actions">
+          <a class="btn btn--primary" href="mailto:as4250as@gmail.com">as4250as@gmail.com</a>
+          <a class="btn btn--ghost" href="https://github.com/sin4691" target="_blank" rel="noopener">GitHub 프로필</a>
+        </div>
+      </section>
+
     </div>
-  </section>
-
-  <section id="projects" class="projects container">
-    <div class="section-head">
-      <p class="eyebrow">PROJECTS</p>
-      <h2>대표 프로젝트</h2>
-      <p class="section-desc">팀 프로젝트와 개인 프로젝트로 진행한 Unity 게임들입니다.</p>
-    </div>
-
-    <div class="project-grid">
-
-      <!-- Project 1 -->
-      <article class="project-card reveal">
-        <div class="project-thumb project-thumb--1">
-          <!-- TODO: 스크린샷 준비되면 아래 div를 <img src="assets/back-together.jpg" alt="Back Together 스크린샷"> 로 교체하세요 -->
-          <span class="thumb-placeholder">BACK<br>TOGETHER</span>
-        </div>
-        <div class="project-body">
-          <div class="project-top">
-            <h3>Back Together</h3>
-            <span class="badge badge--team">팀 프로젝트 · 4인</span>
-          </div>
-          <p class="project-desc">4인이 협업한 온라인 협동 게임(Epic Online Services 기반 멀티플레이). 코드 로직을 이해하고 기믹(게임 메커니즘)을 설계해 레벨에 배치하는 기획·레벨 디자인을 담당했고, 직접 제작한 홍보 릴스로 실제 마케팅 성과를 만들어냈습니다.</p>
-          <div class="stat-chip">🎬 홍보 릴스 조회수 170K · 공유 5.4K</div>
-          <div class="tag-row">
-            <span class="tag">기획</span>
-            <span class="tag">레벨 디자인</span>
-            <span class="tag">마케팅</span>
-          </div>
-          <p class="tech-note">사용 기술: Unity · C# · EOS (Epic Online Services) · Multiplayer</p>
-          <a class="project-link" href="https://github.com/Devel-Rocket-ClassRoom/network-team-project-july-dororong" target="_blank" rel="noopener">
-            GitHub 저장소 보기 <span aria-hidden="true">→</span>
-          </a>
-        </div>
-      </article>
-
-      <!-- Project 2 -->
-      <article class="project-card reveal">
-        <div class="project-thumb project-thumb--2">
-          <!-- TODO: 스크린샷 준비되면 아래 div를 <img src="assets/under-hall.jpg" alt="Under Hall 스크린샷"> 로 교체하세요 -->
-          <span class="thumb-placeholder">UNDER<br>HALL</span>
-        </div>
-        <div class="project-body">
-          <div class="project-top">
-            <h3>Under Hall</h3>
-            <span class="badge badge--team">팀 프로젝트 · 4인 (팀장)</span>
-          </div>
-          <p class="project-desc">1인 플레이 로그라이트(Roguelite) 장르 게임을 만든 4인 팀 프로젝트에서 팀장을 맡아 UI 프로그래밍, 맵 배치, 게임 데이터 값 총괄을 담당했습니다. 팀원 전원이 Git과 협업 프로젝트가 처음이라 협업 프로세스 정립, 일정 관리, 발표까지 도맡았습니다.</p>
-          <ul class="detail-list">
-            <li><strong>Git 인코딩 이슈</strong> — 팀원 코드가 계속 변경 감지되던 문제를 VS 인코딩 UTF-8 통일 + .editorconfig / .gitattributes로 강제 통일해 해결</li>
-            <li><strong>빌드 크래시</strong> — 한글 UI에 TMP Dynamic 폰트 사용 시 빌드 버전에서 크래시 발생 → 한글 2,350자를 미리 구운 Static 폰트로 교체해 제거</li>
-          </ul>
-          <div class="tag-row">
-            <span class="tag">팀장</span>
-            <span class="tag">UI 프로그래밍</span>
-            <span class="tag">Git 관리</span>
-          </div>
-          <p class="tech-note">사용 기술: Unity · C# · TextMeshPro · Roguelite</p>
-          <a class="project-link" href="https://github.com/Devel-Rocket-ClassRoom/team-project-may-5-3" target="_blank" rel="noopener">
-            GitHub 저장소 보기 <span aria-hidden="true">→</span>
-          </a>
-        </div>
-      </article>
-
-      <!-- Project 3 -->
-      <article class="project-card reveal">
-        <div class="project-thumb project-thumb--3">
-          <!-- TODO: 스크린샷 준비되면 아래 div를 <img src="assets/deadline.jpg" alt="DeadLine 스크린샷"> 로 교체하세요 -->
-          <span class="thumb-placeholder">DEAD<br>LINE</span>
-        </div>
-        <div class="project-body">
-          <div class="project-top">
-            <h3>DeadLine</h3>
-            <span class="badge badge--solo">개인 프로젝트</span>
-          </div>
-          <p class="project-desc">게임 개발을 처음 배우기 시작했을 때 기획부터 구현까지 혼자 진행한 공포(Horror) 장르 게임입니다. 사운드 기반 발각 시스템과 AI 추격 시스템을 직접 구현했습니다.</p>
-          <ul class="detail-list">
-            <li><strong>은신(발각) 시스템</strong> — 몬스터에 콜라이더 기반 3단계 감지 범위(큰 소리·중간 소리·작은 소리)를 두고, 플레이어의 이동 상태(달리기·걷기·앉아 걷기)별 소음 값이 범위 허용치를 넘으면 발각되도록 구현. 상시 레이캐스트 대신 콜라이더 판정으로 연산 부담을 줄임</li>
-            <li><strong>AI 추격 시스템</strong> — 소리로 발각된 위치를 실시간으로 갱신해 몬스터가 최신 발각 위치까지 이동하고, 도착 후 주변을 둘러보는 Idle 상태로 전환해 재탐색하도록 구현</li>
-          </ul>
-          <div class="tag-row">
-            <span class="tag">사운드 연출</span>
-            <span class="tag">AI 추격 시스템</span>
-            <span class="tag">은신 메커닉</span>
-          </div>
-          <p class="tech-note">사용 기술: Unity · C#</p>
-          <a class="project-link" href="https://github.com/Devel-Rocket-ClassRoom/personal-project-april-sin4691" target="_blank" rel="noopener">
-            GitHub 저장소 보기 <span aria-hidden="true">→</span>
-          </a>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <section id="contact" class="contact container">
-    <div class="contact-card reveal">
-      <p class="eyebrow">CONTACT</p>
-      <h2>함께 일하고 싶다면</h2>
-      <p class="section-desc">채용/협업 제안은 언제든 환영합니다.</p>
-      <div class="contact-actions">
-        <a class="btn btn--primary" href="mailto:as4250as@gmail.com">as4250as@gmail.com</a>
-        <a class="btn btn--ghost" href="https://github.com/sin4691" target="_blank" rel="noopener">GitHub 프로필</a>
-      </div>
-    </div>
-  </section>
+  </div>
 
 </main>
 
