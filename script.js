@@ -88,3 +88,25 @@ if (y) y.textContent = new Date().getFullYear();
     });
   });
 })();
+
+// 왼쪽 목차: 지금 보고 있는 구간 강조
+(function () {
+  const links = [...document.querySelectorAll('.side-nav a[href^="#"]')];
+  if (!links.length || !('IntersectionObserver' in window)) return;
+  const map = new Map();
+  links.forEach(a => {
+    const el = document.getElementById(a.getAttribute('href').slice(1));
+    if (el) map.set(el, a);
+  });
+  const visible = new Set();
+  const order = [...map.keys()];
+  function paint() {
+    const cur = order.find(el => visible.has(el)) || null;
+    links.forEach(a => a.classList.toggle('is-active', cur && map.get(cur) === a));
+  }
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => e.isIntersecting ? visible.add(e.target) : visible.delete(e.target));
+    paint();
+  }, { rootMargin: '-15% 0px -70% 0px', threshold: 0 });
+  map.forEach((_, el) => io.observe(el));
+})();
