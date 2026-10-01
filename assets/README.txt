@@ -1,7 +1,7 @@
 이 폴더에 이미지를 넣으면 index.html 을 고치지 않아도 자동으로 나타납니다.
-파일이 없으면 그 자리는 화면에 보이지 않습니다. (확장자: webp / png / jpg / jpeg / gif)
+파일이 없으면 그 자리는 점선 '자리' 상자로 보입니다. (확장자: webp / png / jpg / jpeg / gif)
 
-[프로젝트 대표 이미지 — 프로젝트 제목 바로 아래 크게 표시, 16:9 또는 2:1 권장 (예: 1600x800)]
+[프로젝트 대표 이미지 — 첫 화면 카드와 각 프로젝트의 큰 화면 자리에 함께 쓰임, 16:9 권장 (예: 1600x900)]
   back-together.jpg      Back Together
   factory.jpg            NeoForge
   under-hall.jpg         Under Hall
@@ -9,10 +9,10 @@
   vr.jpg                 VR 프로젝트
 
 [프로젝트 스크린샷 — 개요 아래에 나란히 표시, 16:9 권장 (예: 1280x720)]
-  Back Together : B1.png  B2.png  B3.png   (챕터 장면 / 보스 추격+붉은 비네트 / 4인 플레이)
-  NeoForge      : F1.png  F2.png  F3.png   (전체 공장 / 기계 고스트 배치 / 철거 영역+확정 버튼)
-  Under Hall    : U1.png  U2.png  U3.png   (로비 강화 패널 / 기프트 선택 / 전투 장면)
-  DeadLine      : D1.png  D2.png  D3.png   (지하철 탐색 / 몬스터 추격 / 소음 반경 기즈모)
+  Back Together : B1.png  B2.png  B3.png   (챕터 장면 / 보스 추격+붉은 비네트 / Ex 스테이지)
+  NeoForge      : F1.png  F2.png  F3.png   (벨트 드래그 미리보기 / 기계 고스트 배치 / 영역 철거+확정 버튼)
+  Under Hall    : U1.png  U2.png  U3.png   (로비 강화 패널 / 기프트 선택 / 문 상호작용 프롬프트)
+  DeadLine      : D1.png  D2.png  D3.png   (몬스터 추격 / 인벤토리 UI / 점프스케어)
   VR 프로젝트   : V1.png  V2.png           (VRIK 플레이어 / NPC 팔 뻗기)
 
   * 3장을 다 채우지 않아도 됩니다. 있는 것만 보입니다.
