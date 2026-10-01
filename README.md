@@ -57,7 +57,7 @@ Branch를 `main` (또는 `gh-pages`), 폴더를 `/ (root)`로 지정하면
 ## 3. 내용 수정하기
 
 - 소개 문구: `index.html` 맨 위 `.intro`, 기술: `#skills` 섹션
-- 프로젝트 설명/링크: `index.html`의 `#factory`, `#back-together`, `#under-hall`, `#deadline` 섹션 (`<article class="project">` 단위). 프로젝트 순서를 바꾸려면 이 article 블록과 상단 목록(`#projects`), 위쪽 메뉴의 순서를 함께 옮기면 됩니다
+- 프로젝트 설명/링크: `index.html`의 `#factory`(NeoForge), `#back-together`, `#under-hall`, `#deadline`, `#vr` 섹션 (`<article class="project">` 단위). 프로젝트 순서를 바꾸려면 이 article 블록과 상단 목록(`#projects`), 위쪽 메뉴의 순서를 함께 옮기면 됩니다
 - 이메일/연락처: `index.html`의 `#contact` 섹션
 - 에셋 크레딧 표: `index.html`의 `#credits` 섹션
 - 색상/디자인: `style.css` 상단 `:root` 의 변수(`--accent` 등)에서 바꿀 수 있고, 어두운 화면 설정을 쓰는 방문자에게는 자동으로 다크 색이 적용됩니다

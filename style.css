@@ -61,7 +61,10 @@ a:focus-visible{ outline: 2px solid var(--accent); outline-offset: 3px; border-r
   height: 56px;
 }
 .brand{ font-weight: 700; text-decoration: none; letter-spacing: -.01em; white-space: nowrap; }
-.top nav{ display: flex; gap: 22px; margin-left: auto; overflow-x: auto; scrollbar-width: none; }
+.top nav{ display: flex; gap: 22px; margin-left: auto; overflow-x: auto; scrollbar-width: none;
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+          mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+  padding-right: 24px; }
 .top nav::-webkit-scrollbar{ display: none; }
 .top nav a{ font-size: 14px; color: var(--muted); text-decoration: none; white-space: nowrap; }
 .top nav a:hover{ color: var(--text); }
@@ -84,6 +87,17 @@ a:focus-visible{ outline: 2px solid var(--accent); outline-offset: 3px; border-r
 }
 .meta-list b{ color: var(--text); font-weight: 600; margin-right: 6px; }
 
+/* 핵심 수치 */
+.stats{
+  list-style: none; margin: 0 0 32px; padding: 18px 0;
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px 24px;
+  border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+}
+.stats li{ display: flex; flex-direction: column; gap: 2px; }
+.stats b{ font-size: 28px; font-weight: 800; letter-spacing: -.02em; line-height: 1.2; color: var(--accent); font-variant-numeric: tabular-nums; }
+.stats span{ font-size: 13.5px; line-height: 1.5; color: var(--text); }
+.stats small{ display: block; color: var(--muted); font-size: 12.5px; }
+
 /* ---------- 섹션 공통 ---------- */
 section, article{ scroll-margin-top: 72px; }
 .block{ padding: 44px 0; border-top: 1px solid var(--rule); }
@@ -95,7 +109,7 @@ section, article{ scroll-margin-top: 72px; }
 .index li:first-child{ border-top: 1px solid var(--rule); }
 .index a{
   display: grid;
-  grid-template-columns: 11.5rem 1fr;
+  grid-template-columns: 12.5rem 1fr;
   gap: 4px 28px;
   padding: 18px 0;
   text-decoration: none;
@@ -116,6 +130,10 @@ section, article{ scroll-margin-top: 72px; }
 .project > header{ margin-bottom: 28px; }
 .project h2{ margin: 0 0 6px; font-size: clamp(28px, 4.6vw, 36px); line-height: 1.25; font-weight: 800; letter-spacing: -.025em; }
 .project .sub{ margin: 0 0 14px; color: var(--muted); font-size: 15px; }
+.project .eyebrow{ margin: 0 0 4px; font-size: 13px; font-weight: 700; color: var(--accent); letter-spacing: .06em; font-variant-numeric: tabular-nums; }
+.tags{ list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.tags li{ font-size: 12.5px; line-height: 1; padding: 6px 10px; border: 1px solid var(--rule); border-radius: 999px; color: var(--muted); }
+.tags li:first-child{ border-color: var(--accent); color: var(--accent); font-weight: 600; }
 .project .claim{ margin: 0; font-size: 19px; line-height: 1.6; font-weight: 600; letter-spacing: -.01em; max-width: 36rem; }
 
 .project h3{
@@ -274,6 +292,8 @@ footer{ padding: 36px 0 64px; color: var(--muted); font-size: 13.5px; border-top
   .facts dd{ margin-bottom: 14px; }
   .pas{ grid-template-columns: 1fr; gap: 0; }
   .pas dd{ margin-bottom: 12px; }
+  .stats{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .stats b{ font-size: 24px; }
   td:first-child{ white-space: normal; }
   .project{ padding-top: 48px; }
 }
@@ -285,5 +305,6 @@ footer{ padding: 36px 0 64px; color: var(--muted); font-size: 13.5px; border-top
   body{ background: #fff; color: #000; font-size: 11pt; }
   .project{ break-inside: auto; }
   .case{ break-inside: avoid; }
+  .stats b, .tags li:first-child, .project .eyebrow{ color: #000; }
   a{ text-decoration: none; }
 }

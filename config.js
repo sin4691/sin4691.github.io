@@ -11,22 +11,23 @@ window.CONFIG = {
     youtube: "",
     // Back Together Steam 스토어 페이지 (출시 전에도 스토어 페이지가 있으면 넣기)
     steam: "",
-    // 모바일 공장 게임 저장소 (예상 주소: https://github.com/Devel-Rocket-ClassRoom/collabo-team-project-august-automated-factory — 실제 주소 확인 후 입력)
+    // NeoForge(모바일 공장 게임) 저장소 (예상 주소: https://github.com/Devel-Rocket-ClassRoom/collabo-team-project-august-automated-factory — 실제 주소 확인 후 입력)
     factory_repo: "",
-    // 모바일 공장 게임 APK 다운로드 (Releases)
+    // NeoForge APK 다운로드 (Releases)
     factory_apk: ""
   },
 
   // 유튜브 "영상 ID" 만 넣으세요. (https://youtu.be/AbCdEfGh123 → "AbCdEfGh123")
   videos: {
     bt: "",        // Back Together
-    factory: "",   // 모바일 공장 게임
+    factory: "",   // NeoForge
     uh: "",        // Under Hall
-    dl: ""         // DeadLine
+    dl: "",        // DeadLine
+    vr: ""         // VR 프로젝트
   },
 
   text: {
-    // 프로필의 "교육" 줄. 예: "경일게임아카데미 Unity 게임 개발 과정 (2026.03 – 2026.09)"
-    course: ""
+    // 프로필의 "교육" 줄. 기간을 알면 뒤에 "(2026.xx – 2026.xx)" 를 붙이세요.
+    course: "디벨로켓 Unity 게임 프로그래밍 과정"
   }
 };
