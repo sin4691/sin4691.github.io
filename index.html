@@ -216,7 +216,7 @@ Assert.Greater(downstream.Items[0].Position, 0f);</pre>
           <ul class="did">
             <li>챕터 1~6 · Ex 1~2 맵 제작과 난이도 조정</li>
             <li>서버 권위 보스 추격 <code>BossChase</code>와 위험 연출</li>
-            <li>Ex 2 바람 구역: 힘은 서버에서만, 눈 파티클은 클라이언트 연출</li>
+            <li>Ex 2 바람: 팀원의 고정 바람 구역을 방향·세기가 바뀌는 바람으로 확장, 눈 파티클 연출</li>
             <li>사운드 시스템 통합: 재생 유틸·클립 SO·BGM</li>
             <li>버튼 여러 개를 함께 눌러야 움직이는 협동 발판 (<code>CoopPlatformBase</code> 상속)</li>
           </ul>
@@ -256,9 +256,9 @@ Assert.Greater(downstream.Items[0].Position, 0f);</pre>
           </div>
         </details>
         <details>
-          <summary>Ex 2 바람 구역: 판정은 서버, 연출은 클라이언트</summary>
+          <summary>Ex 2 바람: 팀원 기믹을 시간에 따라 바뀌는 바람으로 확장</summary>
           <div class="case-body">
-            <p>바람이 부는 시간·쉬는 시간·방향 전환을 상태 머신으로 돌리고, 플레이어를 미는 힘은 서버에서만 적용했습니다. 클라이언트는 같은 주기로 눈 파티클만 그려 판정과 연출을 나눴습니다. 각 클라이언트가 자기 타이머로 연출을 돌리기 때문에 접속 시점에 따라 연출이 조금 어긋날 수 있는 점은 남은 과제입니다.</p>
+            <p>바람이 플레이어를 미는 구조와 고정 바람 구역은 팀원이 만든 것을 그대로 썼습니다. 저는 Ex 2용으로 왼쪽 → 무풍 → 오른쪽 → 무풍 순서로 방향이 바뀌고, 세기가 서서히 올라갔다 잦아드는 바람으로 확장했습니다. 바람 값이 계속 바뀌기 때문에 들어올 때 한 번만 설정하지 않고 구역 안 플레이어를 <code>HashSet</code>으로 추적해 매 프레임 적용했고, 눈 파티클이 바람 세기에 따라 기울어 내리게 했습니다.</p>
           </div>
         </details>
         <details>
