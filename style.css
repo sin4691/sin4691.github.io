@@ -186,3 +186,14 @@ footer{ padding-top:48px; padding-bottom:56px; font-size:13px; color:var(--muted
   .cases details{ display:block; }
   .case-body{ display:block; }
 }
+
+/* ---------- 프로젝트 링크 (아이콘) ---------- */
+.p-meta .p-links{ margin-left:auto; }
+.p-links dd{ display:flex; flex-wrap:wrap; gap:8px; margin-top:4px; }
+.lk{ display:inline-flex; align-items:center; gap:7px; padding:5px 12px 5px 10px; border:1px solid var(--line); border-radius:999px; background:var(--surface); font-size:13.5px; font-weight:600; text-decoration:none; color:var(--ink); transition:border-color .15s ease, color .15s ease; }
+.lk svg{ width:16px; height:16px; fill:currentColor; flex:none; }
+.lk:hover{ border-color:var(--c); color:var(--c); }
+.p-links dd:not(:has(a:not([hidden]))){ display:none; }
+.p-links:not(:has(a:not([hidden]))){ display:none; }
+.media iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+@media (max-width: 640px){ .p-meta .p-links{ margin-left:0; } }

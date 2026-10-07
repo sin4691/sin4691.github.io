@@ -26,22 +26,31 @@ if (y) y.textContent = new Date().getFullYear();
     el.hidden = false;
   });
 
-  document.querySelectorAll('.video[data-video]').forEach(box => {
-    const id = videos[box.dataset.video];
+  // 영상: 프로젝트 대표 화면 자리(.media)에 바로 재생, 링크 칸에 YouTube 아이콘
+  const hasVideo = new Set();
+  document.querySelectorAll('.project[data-key]').forEach(art => {
+    const key = art.dataset.key;
+    const id = videos[key];
     if (!id) return;
+    const yt = art.querySelector('a[data-yt]');
+    if (yt) { yt.href = 'https://youtu.be/' + encodeURIComponent(id); yt.hidden = false; }
+    const box = art.querySelector('.media');
+    if (!box) return;
     const f = document.createElement('iframe');
     f.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id);
-    f.title = box.dataset.video + ' 플레이 영상';
+    f.title = key + ' 플레이 영상';
     f.loading = 'lazy';
     f.allow = 'accelerometer; encrypted-media; gyroscope; picture-in-picture';
     f.allowFullscreen = true;
     box.appendChild(f);
-    box.hidden = false;
+    box.classList.add('filled', 'is-video');
+    hasVideo.add(box);
   });
 
   // 이미지: assets/<이름>.(webp|png|jpg|jpeg|gif) 이 있으면 자리를 채움
   const EXTS = ['webp', 'png', 'jpg', 'jpeg', 'gif'];
   document.querySelectorAll('[data-img]').forEach(box => {
+    if (hasVideo.has(box)) return;
     let i = 0;
     (function next() {
       if (i >= EXTS.length) return;
