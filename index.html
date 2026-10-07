@@ -203,7 +203,7 @@ Assert.Greater(downstream.Items[0].Position, 0f);</pre>
           <div><dt>기간</dt><dd>2026.06.19 – 09.15</dd></div>
           <div><dt>인원</dt><dd>4인 팀</dd></div>
           <div><dt>출시</dt><dd>Steam · STOVE 2026.10.30</dd></div>
-          <div><dt>역할</dt><dd>서버 권위 보스 · 기믹 동기화 · 레벨 디자인 · 사운드</dd></div>
+          <div><dt>역할</dt><dd>서버 권위 보스 · 사운드 · 레벨 디자인</dd></div>
         </dl>
       </header>
 
@@ -216,7 +216,7 @@ Assert.Greater(downstream.Items[0].Position, 0f);</pre>
           <ul class="did">
             <li>챕터 1~6 · Ex 1~2 맵 제작과 난이도 조정</li>
             <li>서버 권위 보스 추격 <code>BossChase</code>와 위험 연출</li>
-            <li>에코(어둠) 구간 동기화, Ex 2 바람 구역</li>
+            <li>Ex 2 바람 구역: 힘은 서버에서만, 눈 파티클은 클라이언트 연출</li>
             <li>사운드 시스템 통합: 재생 유틸·클립 SO·BGM</li>
             <li>버튼 여러 개를 함께 눌러야 움직이는 협동 발판 (<code>CoopPlatformBase</code> 상속)</li>
           </ul>
@@ -256,9 +256,9 @@ Assert.Greater(downstream.Items[0].Position, 0f);</pre>
           </div>
         </details>
         <details>
-          <summary>어둠(에코) 구간: 다섯 번 고쳐 "동기화하지 않는" 구조로</summary>
+          <summary>Ex 2 바람 구역: 판정은 서버, 연출은 클라이언트</summary>
           <div class="case-body">
-            <p>멀티에서 "가끔 에코가 안 뜬다"는 문제를 로컬 트리거 → SyncVar → 매 프레임 재시도 → 서버 인원 집계 순으로 고쳤지만 상태가 서버와 클라이언트에 이중으로 생겨 복잡해졌습니다. 원인은 콜라이더가 겹친 채 스폰되면 트리거 이벤트가 불리지 않는 것과 초기 동기화 시점 차이였습니다. 결국 원점을 각 클라이언트가 직접 계산하게 해 SyncVar를 없애고, 꺼져 있을 때만 <code>OverlapPoint</code>로 스스로 복구하게 했습니다.</p>
+            <p>바람이 부는 시간·쉬는 시간·방향 전환을 상태 머신으로 돌리고, 플레이어를 미는 힘은 서버에서만 적용했습니다. 클라이언트는 같은 주기로 눈 파티클만 그려 판정과 연출을 나눴습니다. 각 클라이언트가 자기 타이머로 연출을 돌리기 때문에 접속 시점에 따라 연출이 조금 어긋날 수 있는 점은 남은 과제입니다.</p>
           </div>
         </details>
         <details>
