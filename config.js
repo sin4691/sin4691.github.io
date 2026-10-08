@@ -14,7 +14,7 @@ window.CONFIG = {
     factory_github: "https://github.com/sin4691/NeoForge",
     factory_play:   "",   // Google Play 스토어 페이지 (출시되면)
 
-    bt_github: "",        // 공개 저장소가 생기면 (sin4691/backtogether 는 아직 비어 있음)
+    bt_github: "https://github.com/sin4691/backtogether",
     bt_steam:  "",        // Steam 스토어 페이지
     bt_stove:  "",        // STOVE 스토어 페이지
 
