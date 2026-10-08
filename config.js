@@ -26,11 +26,11 @@ window.CONFIG = {
   // 유튜브 "영상 ID" 만 넣으세요. (https://youtu.be/AbCdEfGh123 → "AbCdEfGh123")
   // 넣으면 ① 프로젝트 대표 화면 자리에 영상이 바로 재생되고 ② 링크 칸에 YouTube 아이콘이 생깁니다.
   videos: {
-    factory: "",   // NeoForge
-    bt: "",        // Back Together
-    uh: "",        // Under Hall
-    dl: "",        // DeadLine
-    vr: ""         // CantCatch
+    factory: "vi3W5LhUBd4",   // NeoForge
+    bt: "zqkXOWY_VIs",        // Back Together
+    uh: "15h0-sgr2uM",        // Under Hall
+    dl: "YMHb3pKluNM",        // DeadLine
+    vr: "1gfZ4gmv9q8"         // CantCatch
   },
 
   text: {
