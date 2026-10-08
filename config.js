@@ -15,7 +15,7 @@ window.CONFIG = {
     factory_play:   "",   // Google Play 스토어 페이지 (출시되면)
 
     bt_github: "https://github.com/sin4691/backtogether-code",
-    bt_steam:  "",        // Steam 스토어 페이지
+    bt_steam:  "https://store.steampowered.com/app/5086830/BACK_TOGETHER/",
     bt_stove:  "",        // STOVE 스토어 페이지
 
     uh_github: "https://github.com/sin4691/UnderHall",
